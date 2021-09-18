@@ -74,3 +74,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### for enzyme install: `npm i --save-dev enzyme enzyme-adapter-react-16`
  
 ### to test specific file: `npm test -- fileName` EG: npm test -- About
+
+### to see data on snapshot: DO
+1)  `npm install --save-dev enzyme-to-json`
+
+2) put below mention on package.json
+```json
+"jest":{
+"snapshotSerializers":["enzyme-to-json/serializer"]
+},
+```
