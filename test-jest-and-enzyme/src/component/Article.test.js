@@ -14,5 +14,9 @@ test("if click count proper.",()=>{
 test("using dive.",()=>{
     expect(wrapper.find(Table).dive().find('.custom-border').length).toBe(1);  
 })
+test("using snapshot 1.",()=>{
+    let wrapper=shallow(<Table />)
+    expect(wrapper).toMatchSnapshot();
+})
 
 })
