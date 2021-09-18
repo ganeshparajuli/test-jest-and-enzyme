@@ -14,8 +14,7 @@ function Blog() {
             </div>
             <div>
                 <button className="my-button disable btn-primary">Submit</button>
-            </div>
-            
+            </div>      
         </div>
     )
 }
